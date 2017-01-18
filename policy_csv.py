@@ -54,16 +54,20 @@ def main():
     clusters = cdb.get_epg_policies()
     policies = cdb.get_contract_policies()
 
+    #Process nodes and output information to CSV
     with open('nodes.csv', 'wb') as csvfile:
         nodeswriter = csv.writer(csvfile, delimiter=',',
                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
         nodeswriter.writerow(['Name','IP','Cluster'])
         for cluster in clusters:
+            ##Uncomment for ASA Config
             #print "object-group network " + cluster.name.replace(' ','_')
             for node in cluster.get_node_policies():
+                ##Uncomment for ASA Config
                 #print "network-object host " + node.ip
                 nodeswriter.writerow([node.name,node.ip,cluster.name])
 
+    #Process policies and output information to CSV
     with open('policies.csv','wb') as csvfile:
         policywriter = csv.writer(csvfile, delimiter=',',
                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
@@ -71,6 +75,7 @@ def main():
         for policy in policies:
             for rule in policy.get_whitelist_policies():
                 policywriter.writerow([policy.src_name,policy.dst_name,rule.port_min,rule.port_max,protocols[rule.proto]['Keyword']])
+                ##Uncomment for ASA Config
                 #if (rule.proto == '6') or (rule.proto == '17'):
                 #    print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_') + " eq " + rule.port_min
                 #if rule.proto == '1':
