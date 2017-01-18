@@ -1,0 +1,19 @@
+Name,IP,Cluster
+DC01,7.0.0.11,Domain Controllers
+DC02,7.0.0.12,Domain Controllers
+0.0.0.0/0,0.0.0.0,External
+SQL01,7.0.0.21,MSSQL Database
+SQL02,7.0.0.22,MSSQL Database
+App01,7.0.0.31,Reporting Service
+App02,7.0.0.32,Reporting Service
+SPDC01,7.0.0.63,Sharepoint DC
+SPApp01,7.0.0.62,Sharepoint Front-End
+SPFE01,7.0.0.61,Sharepoint Front-End
+SPSearch01,7.0.0.64,Sharepoint Search
+Tetration Cluster,172.26.46.0,Tetration Cluster (172.26.46.0/24)
+MSLABJumpBox,7.0.0.2,VDI Jump Server
+reporting,7.0.0.50,Web Servers
+Web01,7.0.0.41,Web Servers
+Web01,7.0.0.51,Web Servers
+Web02,7.0.0.42,Web Servers
+Web02,7.0.0.52,Web Servers

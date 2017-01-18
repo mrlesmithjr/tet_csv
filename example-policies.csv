@@ -1,0 +1,285 @@
+Source Cluster,Destination Cluster,Port Min,Port Max,Protocol
+Sharepoint Search,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Sharepoint Search,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Tetration Cluster (172.26.46.0/24),Reporting Service,4651,4651,TCP
+Tetration Cluster (172.26.46.0/24),Reporting Service,44371,44371,TCP
+VDI Jump Server,Sharepoint Search,0,0,ICMP
+External,Domain Controllers,0,0,ICMP
+External,Domain Controllers,88,88,TCP
+External,Domain Controllers,135,135,TCP
+External,Domain Controllers,139,139,TCP
+External,Domain Controllers,389,389,TCP
+External,Domain Controllers,445,445,TCP
+External,Domain Controllers,49155,49155,TCP
+External,Domain Controllers,49158,49158,TCP
+External,Domain Controllers,53,53,UDP
+External,Domain Controllers,123,123,UDP
+External,Domain Controllers,138,138,UDP
+External,Domain Controllers,389,389,UDP
+MSSQL Database,Tetration Cluster (172.26.46.0/24),443,443,TCP
+MSSQL Database,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Domain Controllers,Sharepoint DC,0,0,ICMP
+Domain Controllers,MSSQL Database,0,0,ICMP
+MSSQL Database,Sharepoint DC,54091,54091,TCP
+MSSQL Database,Sharepoint DC,54130,54130,TCP
+VDI Jump Server,Sharepoint Front-End,0,0,ICMP
+Sharepoint Search,MSSQL Database,1433,1433,TCP
+Sharepoint Front-End,Domain Controllers,0,0,IPv6
+Sharepoint Front-End,Domain Controllers,0,0,ICMP
+Sharepoint Front-End,Domain Controllers,53,53,UDP
+Sharepoint Front-End,Domain Controllers,123,123,UDP
+Sharepoint Front-End,Domain Controllers,389,389,UDP
+Sharepoint Front-End,Domain Controllers,88,88,TCP
+Sharepoint Front-End,Domain Controllers,135,135,TCP
+Sharepoint Front-End,Domain Controllers,389,389,TCP
+Sharepoint Front-End,Domain Controllers,445,445,TCP
+Sharepoint Front-End,Domain Controllers,49155,49155,TCP
+Sharepoint Front-End,Domain Controllers,49158,49158,TCP
+Sharepoint Front-End,Reporting Service,7819,7819,TCP
+Sharepoint Front-End,Reporting Service,7886,7886,TCP
+Sharepoint Front-End,Reporting Service,7890,7890,TCP
+Web Servers,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Web Servers,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Reporting Service,Web Servers,445,445,TCP
+Reporting Service,Web Servers,80,80,TCP
+Web Servers,Reporting Service,7855,7855,TCP
+Web Servers,Reporting Service,7815,7815,TCP
+Web Servers,Reporting Service,7849,7849,TCP
+Web Servers,Reporting Service,7847,7847,TCP
+Web Servers,Reporting Service,7813,7813,TCP
+Web Servers,Reporting Service,7904,7904,TCP
+Sharepoint DC,External,137,138,UDP
+Sharepoint DC,External,5355,5355,UDP
+MSSQL Database,Sharepoint Search,49224,49224,TCP
+MSSQL Database,Sharepoint Search,51933,51933,TCP
+MSSQL Database,Sharepoint Search,54326,54326,TCP
+MSSQL Database,Sharepoint Search,54625,54625,TCP
+MSSQL Database,Sharepoint Search,61371,61371,TCP
+MSSQL Database,Sharepoint Search,64269,64269,TCP
+MSSQL Database,Sharepoint Search,64290,64290,TCP
+Sharepoint Search,External,137,138,UDP
+Sharepoint Search,External,5355,5355,UDP
+Tetration Cluster (172.26.46.0/24),Web Servers,50014,50014,TCP
+Tetration Cluster (172.26.46.0/24),Web Servers,60474,60474,TCP
+Tetration Cluster (172.26.46.0/24),Web Servers,50006,50006,TCP
+Tetration Cluster (172.26.46.0/24),Web Servers,57543,57543,TCP
+Web Servers,MSSQL Database,1433,1433,TCP
+MSSQL Database,Sharepoint Front-End,50595,50596,TCP
+MSSQL Database,Sharepoint Front-End,50624,50624,TCP
+MSSQL Database,Sharepoint Front-End,51505,51505,TCP
+MSSQL Database,Sharepoint Front-End,52199,52199,TCP
+MSSQL Database,Sharepoint Front-End,60440,60440,TCP
+MSSQL Database,Sharepoint Front-End,61103,61103,TCP
+MSSQL Database,Sharepoint Front-End,61126,61126,TCP
+MSSQL Database,Sharepoint Front-End,61672,61672,TCP
+MSSQL Database,Sharepoint Front-End,61785,61785,TCP
+MSSQL Database,Sharepoint Front-End,61836,61836,TCP
+MSSQL Database,Sharepoint Front-End,61841,61841,TCP
+MSSQL Database,Sharepoint Front-End,62060,62060,TCP
+MSSQL Database,Sharepoint Front-End,64521,64521,TCP
+External,Sharepoint DC,0,0,ICMP
+Sharepoint Search,Domain Controllers,53,53,UDP
+Sharepoint Search,Domain Controllers,123,123,UDP
+Sharepoint Search,Domain Controllers,389,389,UDP
+Sharepoint Search,Domain Controllers,0,0,ICMP
+Sharepoint Search,Domain Controllers,88,88,TCP
+Sharepoint Search,Domain Controllers,135,135,TCP
+Sharepoint Search,Domain Controllers,389,389,TCP
+Sharepoint Search,Domain Controllers,445,445,TCP
+Sharepoint Search,Domain Controllers,49155,49155,TCP
+Sharepoint Search,Domain Controllers,49158,49158,TCP
+Sharepoint Search,Domain Controllers,0,0,IPv6
+VDI Jump Server,Web Servers,0,0,ICMP
+External,Reporting Service,7850,7850,TCP
+External,Reporting Service,7852,7852,TCP
+External,Reporting Service,0,0,ICMP
+Sharepoint Search,Reporting Service,7830,7830,TCP
+Sharepoint Search,Reporting Service,7880,7881,TCP
+Sharepoint Search,Reporting Service,7883,7883,TCP
+Reporting Service,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Reporting Service,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Domain Controllers,Sharepoint Search,53951,53951,TCP
+Domain Controllers,Sharepoint Search,58546,58546,TCP
+Domain Controllers,Sharepoint Search,58945,58945,TCP
+Domain Controllers,Sharepoint Search,59548,59548,TCP
+Domain Controllers,Sharepoint Search,61997,61997,TCP
+VDI Jump Server,External,137,138,UDP
+VDI Jump Server,External,5355,5355,UDP
+Domain Controllers,Sharepoint Front-End,58838,58838,UDP
+Domain Controllers,Sharepoint Front-End,60852,60852,UDP
+Domain Controllers,Sharepoint Front-End,61239,61239,UDP
+Domain Controllers,Sharepoint Front-End,63786,63786,UDP
+Reporting Service,Reporting Service,445,445,TCP
+Reporting Service,Reporting Service,7820,7820,TCP
+Reporting Service,Reporting Service,7842,7843,TCP
+Reporting Service,Reporting Service,7845,7845,TCP
+Reporting Service,Domain Controllers,0,0,ICMP
+Reporting Service,Domain Controllers,0,0,IPv6
+Reporting Service,Domain Controllers,53,53,UDP
+Reporting Service,Domain Controllers,123,123,UDP
+Reporting Service,Domain Controllers,137,137,UDP
+Reporting Service,Domain Controllers,389,389,UDP
+Reporting Service,Domain Controllers,53,53,TCP
+Reporting Service,Domain Controllers,88,88,TCP
+Reporting Service,Domain Controllers,135,135,TCP
+Reporting Service,Domain Controllers,139,139,TCP
+Reporting Service,Domain Controllers,389,389,TCP
+Reporting Service,Domain Controllers,445,445,TCP
+Reporting Service,Domain Controllers,49155,49155,TCP
+Reporting Service,Domain Controllers,49158,49158,TCP
+Web Servers,External,5355,5355,UDP
+Web Servers,External,137,138,UDP
+Web Servers,External,0,0,IGMP
+MSSQL Database,External,137,138,UDP
+MSSQL Database,External,5355,5355,UDP
+Sharepoint DC,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Sharepoint DC,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Web Servers,Domain Controllers,123,123,UDP
+Web Servers,Domain Controllers,53,53,UDP
+Web Servers,Domain Controllers,389,389,UDP
+Web Servers,Domain Controllers,445,445,TCP
+Web Servers,Domain Controllers,0,0,IPv6
+Web Servers,Domain Controllers,53,53,TCP
+Web Servers,Domain Controllers,49158,49158,TCP
+Web Servers,Domain Controllers,0,0,ICMP
+Web Servers,Domain Controllers,49155,49155,TCP
+Web Servers,Domain Controllers,135,135,TCP
+Web Servers,Domain Controllers,88,88,TCP
+Web Servers,Domain Controllers,389,389,TCP
+Domain Controllers,External,0,0,IGMP
+Domain Controllers,External,53,53,UDP
+Domain Controllers,External,137,138,UDP
+Domain Controllers,External,5355,5355,UDP
+Domain Controllers,External,49595,49595,UDP
+Domain Controllers,External,50126,50126,UDP
+Domain Controllers,External,50689,50689,UDP
+Domain Controllers,External,52069,52069,UDP
+Domain Controllers,External,53864,53864,UDP
+Domain Controllers,External,60358,60358,UDP
+Reporting Service,External,135,135,TCP
+Reporting Service,External,445,445,TCP
+Reporting Service,External,137,138,UDP
+Reporting Service,External,5355,5355,UDP
+VDI Jump Server,Domain Controllers,88,88,TCP
+VDI Jump Server,Domain Controllers,135,135,TCP
+VDI Jump Server,Domain Controllers,389,389,TCP
+VDI Jump Server,Domain Controllers,445,445,TCP
+VDI Jump Server,Domain Controllers,464,464,TCP
+VDI Jump Server,Domain Controllers,3268,3268,TCP
+VDI Jump Server,Domain Controllers,3389,3389,TCP
+VDI Jump Server,Domain Controllers,49155,49155,TCP
+VDI Jump Server,Domain Controllers,49158,49158,TCP
+VDI Jump Server,Domain Controllers,53,53,UDP
+VDI Jump Server,Domain Controllers,123,123,UDP
+VDI Jump Server,Domain Controllers,389,389,UDP
+VDI Jump Server,Domain Controllers,3389,3389,UDP
+VDI Jump Server,Domain Controllers,0,0,IPv6
+VDI Jump Server,Domain Controllers,0,0,ICMP
+VDI Jump Server,Reporting Service,3389,3389,TCP
+VDI Jump Server,Reporting Service,7844,7844,TCP
+VDI Jump Server,Reporting Service,7846,7846,TCP
+VDI Jump Server,Reporting Service,3389,3389,UDP
+VDI Jump Server,Reporting Service,0,0,IPv6
+VDI Jump Server,Reporting Service,0,0,ICMP
+External,Sharepoint Search,0,0,ICMP
+Sharepoint Front-End,External,137,138,UDP
+Sharepoint Front-End,External,5355,5355,UDP
+External,MSSQL Database,3389,3389,UDP
+External,MSSQL Database,0,0,ICMP
+External,MSSQL Database,3389,3389,TCP
+Sharepoint Front-End,Sharepoint Search,808,808,TCP
+Sharepoint Front-End,Sharepoint Search,32843,32844,TCP
+Sharepoint Front-End,Sharepoint Search,0,0,IPv6
+Reporting Service,Sharepoint DC,445,445,TCP
+Sharepoint Front-End,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Sharepoint Front-End,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Domain Controllers,Tetration Cluster (172.26.46.0/24),443,443,TCP
+Domain Controllers,Tetration Cluster (172.26.46.0/24),5640,5640,TCP
+Domain Controllers,Web Servers,0,0,ICMP
+MSSQL Database,Web Servers,57594,57594,TCP
+MSSQL Database,Web Servers,51563,51563,TCP
+MSSQL Database,Web Servers,60406,60406,TCP
+Sharepoint DC,Domain Controllers,53,53,UDP
+Sharepoint DC,Domain Controllers,123,123,UDP
+Sharepoint DC,Domain Controllers,389,389,UDP
+Sharepoint DC,Domain Controllers,0,0,ICMP
+Sharepoint DC,Domain Controllers,0,0,IPv6
+Sharepoint DC,Domain Controllers,53,53,TCP
+Sharepoint DC,Domain Controllers,88,88,TCP
+Sharepoint DC,Domain Controllers,135,135,TCP
+Sharepoint DC,Domain Controllers,389,389,TCP
+Sharepoint DC,Domain Controllers,445,445,TCP
+Sharepoint DC,Domain Controllers,49155,49155,TCP
+Sharepoint DC,Domain Controllers,49158,49158,TCP
+Sharepoint Front-End,Sharepoint Front-End,32843,32843,TCP
+Reporting Service,VDI Jump Server,445,445,TCP
+Reporting Service,VDI Jump Server,2564,2564,TCP
+Reporting Service,VDI Jump Server,4156,4156,TCP
+Reporting Service,VDI Jump Server,55774,55775,UDP
+Reporting Service,VDI Jump Server,59900,59901,UDP
+Reporting Service,VDI Jump Server,64359,64359,UDP
+Sharepoint DC,Reporting Service,7871,7871,TCP
+Reporting Service,MSSQL Database,445,445,TCP
+VDI Jump Server,Sharepoint DC,0,0,ICMP
+MSSQL Database,Domain Controllers,0,0,IPv6
+MSSQL Database,Domain Controllers,53,53,UDP
+MSSQL Database,Domain Controllers,123,123,UDP
+MSSQL Database,Domain Controllers,389,389,UDP
+MSSQL Database,Domain Controllers,88,88,TCP
+MSSQL Database,Domain Controllers,135,135,TCP
+MSSQL Database,Domain Controllers,389,389,TCP
+MSSQL Database,Domain Controllers,445,445,TCP
+MSSQL Database,Domain Controllers,49155,49155,TCP
+MSSQL Database,Domain Controllers,49158,49158,TCP
+MSSQL Database,Domain Controllers,0,0,ICMP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,50805,50805,TCP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,50808,50809,TCP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,50817,50817,TCP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,54806,54806,TCP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,58384,58384,TCP
+Tetration Cluster (172.26.46.0/24),MSSQL Database,58386,58386,TCP
+VDI Jump Server,MSSQL Database,0,0,ICMP
+Domain Controllers,Reporting Service,51709,51709,UDP
+Domain Controllers,Reporting Service,7885,7885,TCP
+Domain Controllers,Reporting Service,0,0,ICMP
+Sharepoint Search,Sharepoint Front-End,32843,32843,TCP
+Tetration Cluster (172.26.46.0/24),Sharepoint DC,59525,59525,TCP
+Tetration Cluster (172.26.46.0/24),Sharepoint DC,59539,59539,TCP
+Tetration Cluster (172.26.46.0/24),Sharepoint DC,61391,61391,TCP
+External,Web Servers,80,80,TCP
+External,Web Servers,0,0,ICMP
+Reporting Service,Sharepoint Search,445,445,TCP
+External,Sharepoint Front-End,0,0,ICMP
+Domain Controllers,Domain Controllers,0,0,ICMP
+Domain Controllers,Domain Controllers,53,53,UDP
+Domain Controllers,Domain Controllers,123,123,UDP
+Domain Controllers,Domain Controllers,389,389,UDP
+Domain Controllers,Domain Controllers,61379,61379,UDP
+Domain Controllers,Domain Controllers,61915,61915,UDP
+Domain Controllers,Domain Controllers,61943,61943,UDP
+Domain Controllers,Domain Controllers,61972,61972,UDP
+Domain Controllers,Domain Controllers,62160,62160,UDP
+Domain Controllers,Domain Controllers,62582,62582,UDP
+Domain Controllers,Domain Controllers,62707,62707,UDP
+Domain Controllers,Domain Controllers,63270,63270,UDP
+Domain Controllers,Domain Controllers,53,53,TCP
+Domain Controllers,Domain Controllers,88,88,TCP
+Domain Controllers,Domain Controllers,135,135,TCP
+Domain Controllers,Domain Controllers,389,389,TCP
+Domain Controllers,Domain Controllers,445,445,TCP
+Domain Controllers,Domain Controllers,49158,49158,TCP
+Domain Controllers,Domain Controllers,53226,53226,TCP
+Domain Controllers,Domain Controllers,55202,55202,TCP
+Domain Controllers,Domain Controllers,58178,58178,TCP
+Domain Controllers,Domain Controllers,61695,61695,TCP
+Domain Controllers,Domain Controllers,65233,65233,TCP
+Domain Controllers,Domain Controllers,0,0,IPv6
+MSSQL Database,Reporting Service,7818,7818,TCP
+MSSQL Database,Reporting Service,7872,7872,TCP
+MSSQL Database,Reporting Service,7874,7874,TCP
+MSSQL Database,Reporting Service,7889,7889,TCP
+MSSQL Database,Reporting Service,7891,7891,TCP
+Sharepoint DC,MSSQL Database,1433,1433,TCP
+Sharepoint Front-End,MSSQL Database,1433,1433,TCP
+Sharepoint Front-End,Sharepoint DC,22233,22233,TCP
+Reporting Service,Sharepoint Front-End,445,445,TCP
