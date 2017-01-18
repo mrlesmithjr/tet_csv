@@ -71,15 +71,10 @@ def main():
         for policy in policies:
             for rule in policy.get_whitelist_policies():
                 policywriter.writerow([policy.src_name,policy.dst_name,rule.port_min,rule.port_max,protocols[rule.proto]['Keyword']])
-                if (rule.proto == '6') or (rule.proto == '17'):
-                    #print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_') + " eq " + rule.port_min
-                if rule.proto == '1':
-                    #print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_')
-
-
-
-
-
+                #if (rule.proto == '6') or (rule.proto == '17'):
+                #    print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_') + " eq " + rule.port_min
+                #if rule.proto == '1':
+                #    print "access-list ACL_IN extended permit " + protocols[rule.proto]['Keyword'] + " object-group " + policy.src_name.replace(' ','_') + " object-group " + policy.dst_name.replace(' ','_')
 
 
 if __name__ == '__main__':
