@@ -74,7 +74,7 @@ access-list ACL_IN extended permit TCP object-group Web_Servers object-group Rep
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group Reporting_Service eq 7847
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group Reporting_Service eq 7813
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group Reporting_Service eq 7904
-access-list ACL_IN extended permit UDP object-group Sharepoint_DC object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Sharepoint_DC object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group Sharepoint_DC object-group External eq 5355
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Search eq 49224
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Search eq 51933
@@ -83,14 +83,14 @@ access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group 
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Search eq 61371
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Search eq 64269
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Search eq 64290
-access-list ACL_IN extended permit UDP object-group Sharepoint_Search object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Sharepoint_Search object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group Sharepoint_Search object-group External eq 5355
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group Web_Servers eq 50014
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group Web_Servers eq 60474
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group Web_Servers eq 50006
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group Web_Servers eq 57543
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group MSSQL_Database eq 1433
-access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Front-End eq 50595
+access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Front-End range 50595-50596
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Front-End eq 50624
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Front-End eq 51505
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Sharepoint_Front-End eq 52199
@@ -119,7 +119,7 @@ access-list ACL_IN extended permit TCP object-group External object-group Report
 access-list ACL_IN extended permit TCP object-group External object-group Reporting_Service eq 7852
 access-list ACL_IN extended permit ICMP object-group External object-group Reporting_Service
 access-list ACL_IN extended permit TCP object-group Sharepoint_Search object-group Reporting_Service eq 7830
-access-list ACL_IN extended permit TCP object-group Sharepoint_Search object-group Reporting_Service eq 7880
+access-list ACL_IN extended permit TCP object-group Sharepoint_Search object-group Reporting_Service range 7880-7881
 access-list ACL_IN extended permit TCP object-group Sharepoint_Search object-group Reporting_Service eq 7883
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Tetration_Cluster_(172.26.46.0/24) eq 443
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Tetration_Cluster_(172.26.46.0/24) eq 5640
@@ -128,7 +128,7 @@ access-list ACL_IN extended permit TCP object-group Domain_Controllers object-gr
 access-list ACL_IN extended permit TCP object-group Domain_Controllers object-group Sharepoint_Search eq 58945
 access-list ACL_IN extended permit TCP object-group Domain_Controllers object-group Sharepoint_Search eq 59548
 access-list ACL_IN extended permit TCP object-group Domain_Controllers object-group Sharepoint_Search eq 61997
-access-list ACL_IN extended permit UDP object-group VDI_Jump_Server object-group External eq 137
+access-list ACL_IN extended permit UDP object-group VDI_Jump_Server object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group VDI_Jump_Server object-group External eq 5355
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group Sharepoint_Front-End eq 58838
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group Sharepoint_Front-End eq 60852
@@ -136,7 +136,7 @@ access-list ACL_IN extended permit UDP object-group Domain_Controllers object-gr
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group Sharepoint_Front-End eq 63786
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Reporting_Service eq 445
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Reporting_Service eq 7820
-access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Reporting_Service eq 7842
+access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Reporting_Service range 7842-7843
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Reporting_Service eq 7845
 access-list ACL_IN extended permit ICMP object-group Reporting_Service object-group Domain_Controllers
 access-list ACL_IN extended permit UDP object-group Reporting_Service object-group Domain_Controllers eq 53
@@ -152,8 +152,8 @@ access-list ACL_IN extended permit TCP object-group Reporting_Service object-gro
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Domain_Controllers eq 49155
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Domain_Controllers eq 49158
 access-list ACL_IN extended permit UDP object-group Web_Servers object-group External eq 5355
-access-list ACL_IN extended permit UDP object-group Web_Servers object-group External eq 137
-access-list ACL_IN extended permit UDP object-group MSSQL_Database object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Web_Servers object-group External range 137-138
+access-list ACL_IN extended permit UDP object-group MSSQL_Database object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group MSSQL_Database object-group External eq 5355
 access-list ACL_IN extended permit TCP object-group Sharepoint_DC object-group Tetration_Cluster_(172.26.46.0/24) eq 443
 access-list ACL_IN extended permit TCP object-group Sharepoint_DC object-group Tetration_Cluster_(172.26.46.0/24) eq 5640
@@ -169,7 +169,7 @@ access-list ACL_IN extended permit TCP object-group Web_Servers object-group Dom
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group Domain_Controllers eq 88
 access-list ACL_IN extended permit TCP object-group Web_Servers object-group Domain_Controllers eq 389
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 53
-access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 5355
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 49595
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 50126
@@ -179,7 +179,7 @@ access-list ACL_IN extended permit UDP object-group Domain_Controllers object-gr
 access-list ACL_IN extended permit UDP object-group Domain_Controllers object-group External eq 60358
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group External eq 135
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group External eq 445
-access-list ACL_IN extended permit UDP object-group Reporting_Service object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Reporting_Service object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group Reporting_Service object-group External eq 5355
 access-list ACL_IN extended permit TCP object-group VDI_Jump_Server object-group Domain_Controllers eq 88
 access-list ACL_IN extended permit TCP object-group VDI_Jump_Server object-group Domain_Controllers eq 135
@@ -201,13 +201,13 @@ access-list ACL_IN extended permit TCP object-group VDI_Jump_Server object-group
 access-list ACL_IN extended permit UDP object-group VDI_Jump_Server object-group Reporting_Service eq 3389
 access-list ACL_IN extended permit ICMP object-group VDI_Jump_Server object-group Reporting_Service
 access-list ACL_IN extended permit ICMP object-group External object-group Sharepoint_Search
-access-list ACL_IN extended permit UDP object-group Sharepoint_Front-End object-group External eq 137
+access-list ACL_IN extended permit UDP object-group Sharepoint_Front-End object-group External range 137-138
 access-list ACL_IN extended permit UDP object-group Sharepoint_Front-End object-group External eq 5355
 access-list ACL_IN extended permit UDP object-group External object-group MSSQL_Database eq 3389
 access-list ACL_IN extended permit ICMP object-group External object-group MSSQL_Database
 access-list ACL_IN extended permit TCP object-group External object-group MSSQL_Database eq 3389
 access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-group Sharepoint_Search eq 808
-access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-group Sharepoint_Search eq 32843
+access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-group Sharepoint_Search range 32843-32844
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group Sharepoint_DC eq 445
 access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-group Tetration_Cluster_(172.26.46.0/24) eq 443
 access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-group Tetration_Cluster_(172.26.46.0/24) eq 5640
@@ -232,8 +232,8 @@ access-list ACL_IN extended permit TCP object-group Sharepoint_Front-End object-
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group VDI_Jump_Server eq 445
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group VDI_Jump_Server eq 2564
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group VDI_Jump_Server eq 4156
-access-list ACL_IN extended permit UDP object-group Reporting_Service object-group VDI_Jump_Server eq 55774
-access-list ACL_IN extended permit UDP object-group Reporting_Service object-group VDI_Jump_Server eq 59900
+access-list ACL_IN extended permit UDP object-group Reporting_Service object-group VDI_Jump_Server range 55774-55775
+access-list ACL_IN extended permit UDP object-group Reporting_Service object-group VDI_Jump_Server range 59900-59901
 access-list ACL_IN extended permit UDP object-group Reporting_Service object-group VDI_Jump_Server eq 64359
 access-list ACL_IN extended permit TCP object-group Sharepoint_DC object-group Reporting_Service eq 7871
 access-list ACL_IN extended permit TCP object-group Reporting_Service object-group MSSQL_Database eq 445
@@ -249,7 +249,7 @@ access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group 
 access-list ACL_IN extended permit TCP object-group MSSQL_Database object-group Domain_Controllers eq 49158
 access-list ACL_IN extended permit ICMP object-group MSSQL_Database object-group Domain_Controllers
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database eq 50805
-access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database eq 50808
+access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database range 50808-50809
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database eq 50817
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database eq 54806
 access-list ACL_IN extended permit TCP object-group Tetration_Cluster_(172.26.46.0/24) object-group MSSQL_Database eq 58384
