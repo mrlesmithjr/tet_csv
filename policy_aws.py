@@ -36,20 +36,6 @@ def main():
         print 'Could not load improperly formatted configuration file'
         return
 
-    # Load in the IANA Protocols
-    protocols = {}
-    try:
-        with open('protocol-numbers-1.csv') as protocol_file:
-            reader = csv.DictReader(protocol_file)
-            for row in reader:
-                protocols[row['Decimal']]=row
-    except IOError:
-        print '%% Could not load protocols file'
-        return
-    except ValueError:
-        print 'Could not load improperly formatted protocols file'
-        return
-
     ec2 = boto3.resource('ec2')
     ec2client = boto3.client('ec2')
 
@@ -59,6 +45,13 @@ def main():
     policies = cdb.get_contract_policies()
     response = ec2client.describe_instances()
     sgs = {}
+
+    existing_groups = ec2client.describe_security_groups()
+    sshGroupID = ''
+    #Find the ID for the SSH Security Group
+    for group in existing_groups["SecurityGroups"]:
+        if (group['GroupName'] == 'ssh'):
+            sshGroupID = group['GroupId']
 
     #Process nodes and output information to CSV
     for cluster in clusters:

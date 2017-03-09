@@ -2,10 +2,10 @@
 """
 Application to push contract configuration to the APIC
 """
-from acitoolkit import (Tenant, AppProfile, EPG,
-                        Session, Contract, ContractSubject, Filter, FilterEntry,
-                        BridgeDomain, AttributeCriterion, OutsideL3, OutsideEPG, OutsideNetwork,
-                        Node, Context)
+#from acitoolkit import (Tenant, AppProfile, EPG,
+#                        Session, Contract, ContractSubject, Filter, FilterEntry,
+#                        BridgeDomain, AttributeCriterion, OutsideL3, OutsideEPG, OutsideNetwork,
+#                        Node, Context)
 import json
 import re
 from jsonschema import validate, ValidationError, FormatChecker
